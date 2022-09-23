@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TASk3</title>
+    <style>
+body {
+  background-color: #E6E6FA;
+}
+</style>
+</head>
+<body>
+<form action="/task3" method="GET">
+  <input type="text" name="data" placeholder="what do you want to search ?"/>
+    <input type="submit" name="submit" value="search"/>
+</form>
+{% for y,x,z in data %}
+
+<h3><a href="{{ x }}"> {{ y }}</a></h3>
+
+    <p>{{ z }}</p>
+
+{% endfor %}
+</body>
+</html>
