@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button><a href="http://127.0.0.1:8000/">Home</a></button>
+<h1>Top 3 searches are :</h1>
+{% for i,j in file %}
+<ul><li><h3><a href="http://127.0.0.1:8000/task3/?data={{ i }}"+"&submit=search">{{ i }}</a> ({{ j }})</h3></li></ul>
+{% endfor %}
+
+</body>
+</html>
